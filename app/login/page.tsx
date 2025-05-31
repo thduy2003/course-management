@@ -32,11 +32,11 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="flex w-[900px] h-[500px] bg-white rounded-xl shadow overflow-hidden">
         <div className="flex-1 flex flex-col items-center justify-center bg-blue-500">
-          <img src="/edusys_logo.png" alt="Logo" className="w-40 mb-8" />
+          <img src="/edusys_logo.png" alt="Logo" className="w-50 mb-8" />
           <h2 className="text-2xl font-bold text-white mb-2">TRUNG TÂM TIẾNG ANH EDUSYS</h2>
         </div>
         <div className="flex-1 flex flex-col justify-center px-12">
-          <h2 className="text-3xl font-bold mb-8 text-right border-b-4 border-purple-400 w-fit ml-auto pr-2">ĐĂNG NHẬP</h2>
+          <h2 className="text-3xl font-bold mb-8 text-right border-b-4 border-purple-400 w-fit mx-auto pr-2">ĐĂNG NHẬP</h2>
           <Form layout="vertical" onFinish={onFinish}>
             <Form.Item label="Tên đăng nhập/SDT/email" name="username" rules={[{ required: true, message: 'Vui lòng nhập tên đăng nhập!' }]}> 
               <Input size="large" />

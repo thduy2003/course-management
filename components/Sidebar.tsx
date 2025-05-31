@@ -81,8 +81,8 @@ export default function Sidebar() {
   }
   const menuItems = menuByRole[user.role] || [];
   return (
-    <aside className="bg-white rounded-2xl p-8 w-full max-w-xs flex flex-col items-center shadow min-h-[90vh]">
-      <img src="/edusys_logo.png" alt="Logo" className="w-24 mb-4" />
+    <aside className="bg-white rounded-2xl p-8 w-full max-w-[350px] flex flex-col items-center shadow min-h-[90vh]">
+      <img src="/edusys_logo_menu.jpeg" alt="Logo" className="w-[200px] mb-4" />
       <h1 className="text-blue-500 font-bold text-center text-lg mb-8 leading-tight">
         HỆ THỐNG QUẢN LÝ GIÁO DỤC<br />TIẾNG ANH EDUSYS
       </h1>

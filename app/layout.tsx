@@ -27,7 +27,7 @@ function LayoutContent({ children }: { children: React.ReactNode }) {
   if (!user && pathname !== '/login') return null;
 
   return (
-    <div style={{gap: '15px'}} className="flex flex-row gap-4 max-w-7xl">
+    <div style={{gap: '15px'}} className="flex flex-row gap-4">
       <Sidebar />
       <div className="flex flex-col w-full">
         {showHeader && <Header />}
