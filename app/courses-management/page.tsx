@@ -52,7 +52,7 @@ export default function CoursesManagement() {
       const newReg: RegisteredCourse = {
         name: course.name,
         registerDate: new Date().toLocaleDateString('vi-VN'),
-        total: course.fee,
+        total: course.fee || "",
         status: 'Chưa thanh toán',
       };
       return Promise.resolve(newReg);
@@ -87,7 +87,7 @@ export default function CoursesManagement() {
       startDate: course.startDate,
       endDate: course.endDate,
       sessions: course.sessions + ' buổi',
-      fee: course.fee.replace(/\D/g, ''),
+      fee: course?.fee?.replace(/\D/g, ''),
     });
   };
 
